@@ -30,3 +30,4 @@ Console.Write("]");
 return arraynew;
 }
 
+NewArray(array);
