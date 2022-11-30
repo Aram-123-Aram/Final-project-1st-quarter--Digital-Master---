@@ -17,3 +17,16 @@ int length = new Random().Next(0,4);                    //Сгенерируем
 string[] arraynew = new string[length];
 Console.WriteLine($"    length= {length}");
 
+string[] NewArray(string[] arr)                         //Создаем Метод,который в зависимости от длины 
+{                                                       //нового массива, сформирует новый массив,заполняя
+Console.Write($"->  arraynew: [");                              //некоторими элементамы старого массива.
+for(int i=0; i<length; i++)
+{if(length == 3) arraynew[i] = arr[i+2];
+ else if(length == 2) arraynew[i] = arr[i+3];
+      else arraynew[i] = array[i+4];
+if(i == length-1) Console.Write($"{arraynew[i]}");
+else Console.Write($"{arraynew[i]}, "); }
+Console.Write("]");
+return arraynew;
+}
+
