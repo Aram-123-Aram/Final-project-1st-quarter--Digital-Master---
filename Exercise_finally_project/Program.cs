@@ -13,3 +13,7 @@ Console.WriteLine($"Введите 6 символов массива array: ");
 for(int i=0; i<array.Length; i++)
 {array[i] = Console.ReadLine()!;}
 
+int length = new Random().Next(0,4);                    //Сгенерируем длина нового массива [0,3]диапазоне.
+string[] arraynew = new string[length];
+Console.WriteLine($"    length= {length}");
+
