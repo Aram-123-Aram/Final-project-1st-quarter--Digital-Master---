@@ -7,5 +7,9 @@
 ["1234", "1567", "-2", "computer science"] -> ["-2"]
 [Russia, Denmark, Kazan] -> []                     */
 
+string[] array = new string[6];                                  
 
+Console.WriteLine($"Введите 6 символов массива array: ");
+for(int i=0; i<array.Length; i++)
+{array[i] = Console.ReadLine()!;}
 
